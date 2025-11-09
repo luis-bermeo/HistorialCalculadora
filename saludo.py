@@ -1,4 +1,5 @@
 # saludo.py
-# Versión 1: Saludo básico
+# Versión 2: Saludo personalizado con input
 
-print("Hola mundo")
+nombre = input("¿Cómo te llamas? ")
+print(f"Hola, {nombre}!")
