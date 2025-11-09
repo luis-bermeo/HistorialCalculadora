@@ -25,7 +25,7 @@ while True:
     if continuar.lower() != "s": # Sale del bucle si la respuesta no es 's' (sí)
         break # Detiene el bucle
 
-    #Leer y mostrar el historial
-    print("\nHistorial de operaciones:") # Título del historial
-    with open("historial.txt", "r") as f: # Abre el archivo en modo "read"
-        print(f.read()) # Imprime todo el contenido del archivo
+#Leer y mostrar el historial
+print("\nHistorial de operaciones:") # Título del historial
+with open("historial.txt", "r") as f: # Abre el archivo en modo "read"
+    print(f.read()) # Imprime
