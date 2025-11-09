@@ -16,3 +16,6 @@ else:
     resultado = "Operación no válida"
 
 print(f"Resultado: {resultado}")
+
+with open("historial.txt", "a") as f:
+    f.write(f"{num_a} {op} {num_b} = {resultado}\n")
