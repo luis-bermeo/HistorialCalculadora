@@ -1,4 +1,4 @@
-# Versión 3: Logica + Historial + Bucle
+# Versión 4: Logica + Historial + Bucle + Ver historial
 
 while True:
     num_a = float(input("Número 1: "))
@@ -24,3 +24,8 @@ while True:
     continuar = input("¿Quieres hacer otra operación? (s/n): ")
     if continuar.lower() != "s": # Sale del bucle si la respuesta no es 's' (sí)
         break # Detiene el bucle
+
+    #Leer y mostrar el historial
+    print("\nHistorial de operaciones:") # Título del historial
+    with open("historial.txt", "r") as f: # Abre el archivo en modo "read"
+        print(f.read()) # Imprime todo el contenido del archivo
